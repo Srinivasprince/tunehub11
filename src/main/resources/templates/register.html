@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Register page</title>
+	</head>
+	<body>
+		<h1>User Registeration</h1>
+		<form action="register" method="post">
+			<label>Username:</label>
+			<input type="text" name="username" >
+			<br>
+			<label>email:</label>
+			<input type="text" name="email">
+			<br>
+			<label>Password:</label>
+			<input type="text" name="password" >
+			<br>
+			<label>Gender</label>
+			M<input type="radio" name="gender" value="male"/>
+			F<input type="radio" name="gender" value="female"/>
+			o<input type="radio" name="gender" value="other"/>
+			<br>
+			<label>role:</label>
+			Admin<input type="radio" name="role" value="Admin">
+			Customer<input type="radio" name="role" value="Customer">
+			<br>
+			<label>Address:</label>
+			<textarea name="text" id="address"></textarea>
+
+			<br>
+		   <button type="submit">Submit</button>
+
+			
+		</form>
+	</body>
+</html>

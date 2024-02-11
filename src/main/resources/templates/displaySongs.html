@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Display Home</title>
+		<!----<style type="text/css">
+			iframe{
+			height:100px;
+			width:500px;
+			}
+		</style>---->
+	</head>
+	<body>
+		<table border="">
+			<thead>
+				<tr>
+					<th>Name</th>
+					<th>Artist</th>
+					<th>Genre</th>
+					<th>Play</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr th:each="song:${songs}">
+					<td th:text="${song.name}"> </td>
+					<td th:text="${song.artist}"> </td>
+					<td th:text="${song.genre}"> </td>
+					<td >
+						<!--<audio controls>
+							<source th:src="${song.link}" type="audio/mpeg">
+						</audio>-->
+					 <audio controls>
+        <source src="https://github.com/Srinivasprince/audiofiles/raw/main/El%20Billete%20-%20Edgar%20Lopez%20and%20Quincas%20Moreira%20(1).mp3" 
+        type="audio/mpeg">
+        your broser does not support
+
+    </audio>
+						</td>
+				</tr>
+			</tbody>
+		</table>
+	</body>
+</html>
